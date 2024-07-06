@@ -1,0 +1,19 @@
+{
+  "name": "hotelbooking",
+  "version": "1.0.0",
+  "description": "this my Project app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SudarshnaThakur15/React-Testing.git"
+  },
+  "author": "Sudarshna Thakur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SudarshnaThakur15/React-Testing/issues"
+  },
+  "homepage": "https://github.com/SudarshnaThakur15/React-Testing#readme"
+}
