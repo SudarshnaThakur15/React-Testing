@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/SudarshnaThakur15/React-Testing/issues"
   },
-  "homepage": "https://github.com/SudarshnaThakur15/React-Testing#readme"
+  "homepage": "https://github.com/SudarshnaThakur15/React-Testing#readme",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.5.0",
+    "path": "^0.12.7"
+  }
 }
