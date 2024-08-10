@@ -1,7 +1,11 @@
 import { useState } from 'react'
 import './index.css';
+import LoginForm from './Components/Login';
 import Navbar from './Components/Navbar'
 import Hotelcard from './Components/Hotelcard';
+import { Outlet } from 'react-router';
+import Home from './Components/Home';
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -23,9 +27,7 @@ function App() {
   return (
     <>
         <Navbar/>
-        <div className="whitespace-nowrap justify-around items-center  bg-black-1000 overflow-x-auto">
-         {hotelCards}</div>
-         
+        <Outlet/>
 
 
     </>
