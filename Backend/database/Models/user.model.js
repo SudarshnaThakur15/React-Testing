@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
-
+//prompt: i want to track the activities of the user like when he visited the hotel, when he drafted a booking, when he completed a booking. I want to store this information in the database. How can I design the schema for the user and activity?
 const ActivitySchema = new mongoose.Schema({
   type: { type: String }, // Type of activity, e.g., 'visit', 'draft_booking', 'completed_booking'
   hotelId: { type: mongoose.Schema.Types.ObjectId, 
     ref: 'Hotel' },
-   // Reference to a Hotel document
+   // it is for the Reference to a Hotel document
   date: { type: Date,
      default: Date.now } // Date when the activity occurred
 });

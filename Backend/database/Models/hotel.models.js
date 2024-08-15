@@ -1,22 +1,19 @@
 const mongoose=require("mongoose")
-
-//this is for rooms of the hotel
+//Prompt:I want to create a schema for the rooms in the hotel. every hootel is going to have multiple rooms.Each room will have basic attributes like 1:type-delux,non-delux,semidelux, 2:price,3:pictures ,4:availability,5:Amenties  how can I add it to my hotel schema
 const RoomSchema = new mongoose.Schema({
-  type: String, // e.g., Single, Double, Suite
+  type: String, 
   price: Number,
-  amenities: [String], // e.g., ["Wi-Fi", "TV", "Air Conditioning"]
-  isAvailable: { 
-    type: Boolean, default: true 
-  },
   pictures:{
     type:[String],
   },
-  description: String // Optional description of the room
+  isAvailable: { 
+    type: Boolean, default: true 
+  },
+  
+  amenities: [String], 
+  description: String 
 });
 
-
-
-//hotel schema
 const hotelSchema=new mongoose.Schema({
     name:{
         type:String,
@@ -47,7 +44,7 @@ const hotelSchema=new mongoose.Schema({
         type:[Number],
     },
     rooms: [RoomSchema], // Embedding Room schema
-    description: String // Optional description of the hotel
+    description: String 
 })
 const Hotel = mongoose.model('Hotel', hotelSchema);
 
